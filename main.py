@@ -44,3 +44,27 @@ for i in range(numero_2, -1, -1):
 # 5. O -1 no terceiro argumento faz com que a sequência seja decrescente
 # 6. O -1 no segundo argumento faz com que a sequência vá até o número 0
 # 7. O print(i) exibe cada número da sequência
+
+# ----- Objetivo 3 -----
+
+# Criação de um loop que solicita que o usuário insira vários números
+# O loop deve ser interrompido quando o usuário inserir um número negativo, fornecendo a quantidade de tentativas ao final
+
+# -- Código --
+
+# Solicitação do número 
+numero_3 = int(input("Insira um numero:"))
+# OBS: O int foi utilizado para que o usuário insira somente números inteiros
+
+# Contador de tentativas
+contador_tentativas = 1
+
+# Loop que solicita que o usuário insira vários números
+while numero_3 >= 0:
+    numero_3 = int(input("Insira um numero novamente:"))
+    contador_tentativas += 1
+# OBS: O contador_tentativas += 1 funciona de modo que o "+" adiciona, o "=" atribui o valor e o "1" é o valor atribuido
+
+# Exibição da quantidade de tentativas
+print(f"Quantidade de tentativas: {contador_tentativas}")
+# OBS: O "f" foi utilizado para qye a variável "contador_tentativas" seja exibida na string (essa é a função do "f" em uma string)
